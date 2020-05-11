@@ -9,6 +9,7 @@ cache:
   bundler: true
   yarn: true
   directories:
+    - vendor/cache
     - node_modules
 before_install:
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
