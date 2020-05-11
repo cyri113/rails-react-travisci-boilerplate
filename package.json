@@ -2,7 +2,7 @@
   "name": "rails_react_travisci_boilerplate",
   "private": true,
   "scripts": {
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "jest": {
     "collectCoverage": true,
