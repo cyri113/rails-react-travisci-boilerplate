@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`display default name 1`] = `
+<div>
+  <h1>
+    Hello 
+    David
+    !
+  </h1>
+</div>
+`;
+
+exports[`display prop name 1`] = `
+<div>
+  <h1>
+    Hello 
+    John
+    !
+  </h1>
+</div>
+`;
