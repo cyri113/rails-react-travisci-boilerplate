@@ -35,6 +35,7 @@ group :development, :test do
   gem "simplecov", "~>0.17.1", require: false
   gem "factory_bot_rails"
   gem "faker"
+  gem "dotenv-rails"
 end
 
 group :development do
