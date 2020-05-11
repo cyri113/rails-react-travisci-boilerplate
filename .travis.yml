@@ -3,8 +3,6 @@
 language: ruby
 rvm:
   - 2.5.1
-node_js:
-  - 8.16.0
 cache:
   bundler: true
   yarn: true
@@ -13,6 +11,7 @@ cache:
 before_install:
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
   - chmod +x ./cc-test-reporter
+  - nvm install v12.16.3
 install:
   - bundle install
   - yarn install
