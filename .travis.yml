@@ -18,6 +18,8 @@ before_install:
   - nvm install v12.16.3 # Will need to occassionally bump this
 install:
   - bundle install
+  - bundle show --paths
+  - bundle config
   - yarn install
 before_script:
   - cp config/database.yml.travis config/database.yml
