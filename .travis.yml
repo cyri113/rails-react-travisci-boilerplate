@@ -10,14 +10,13 @@ cache:
   yarn: true
   directories:
     - node_modules
-    - /home/travis/.rvm/gems/ruby-2.5.1/gems/ # bundle cache
 before_install:
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
   - chmod +x ./cc-test-reporter
   - ./cc-test-reporter before-build
   - nvm install v12.16.3 # Will need to occassionally bump this
 install:
-  - bundle install
+  - bundle install --without production --path=${BUNDLE_PATH:-vendor/bundle}
   - yarn install
 before_script:
   - cp config/database.yml.travis config/database.yml
